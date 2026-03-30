@@ -1,257 +1,446 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
-		<title>A compléter !</title>
+		<title>Festival des Films de Plein Air au Parc Monceau Paris – Édition 2025 | Le Voyage</title>
 		
 		<!--Metatags-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		
+		<meta name="description" content="Le Festival des Films de Plein Air revient au Parc Monceau à Paris du 5 au 7 août 2025. Trois soirées de cinéma d'auteur en plein air autour du thème « Le Voyage ». Entrée libre, réservation en ligne.">
+		<meta name="keywords" content="festival cinéma plein air Paris, films d'auteur Paris été, cinéma parc Monceau, festival film gratuit Paris, soirée cinéma en plein air, film d'auteur voyage, festival culturel Paris août, projection extérieure Paris, cinéma sous les étoiles Paris, films voyage auteur 2025">
+		<meta name="author" content="Association Les Films de Plein Air">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://www.lesfilmsdepleináir.org/index.html">
+
 		<!--Open graph data-->
-		<meta property="og:title" content=""/>
-		<meta property="og:type" content=""/>
-		<meta property="og:url" content=""/>
-		<meta property="og:image" content=""/>
-		<meta property="og:description" content=""/>
+		<meta property="og:title" content="Festival des Films de Plein Air – Le Voyage | Parc Monceau Paris, 5-7 août 2025"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="https://www.lesfilmsdepleináir.org/"/>
+		<meta property="og:image" content="https://www.lesfilmsdepleináir.org/images/og-cover.jpg"/>
+		<meta property="og:description" content="Trois soirées de cinéma d'auteur en plein air au cœur de Paris, sous les étoiles du Parc Monceau. Découvrez notre sélection de films sur le thème du Voyage, du 5 au 7 août 2025."/>
+		<meta property="og:locale" content="fr_FR" />
+		<meta property="og:site_name" content="Festival des Films de Plein Air" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Festival des Films de Plein Air – Le Voyage | Paris, août 2025">
+		<meta name="twitter:description" content="Cinéma d'auteur en plein air au Parc Monceau à Paris. 3 soirées, 10 films, un thème : Le Voyage. Du 5 au 7 août 2025.">
+
+		<!-- Schema.org structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Festival",
+			"name": "Festival des Films de Plein Air – Le Voyage",
+			"description": "Festival de cinéma d'auteur en plein air au Parc Monceau à Paris, sur le thème du Voyage.",
+			"startDate": "2025-08-05",
+			"endDate": "2025-08-07",
+			"location": {
+				"@type": "Place",
+				"name": "Parc Monceau",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "35 Boulevard de Courcelles",
+					"addressLocality": "Paris",
+					"postalCode": "75008",
+					"addressCountry": "FR"
+				}
+			},
+			"organizer": {
+				"@type": "Organization",
+				"name": "Association Les Films de Plein Air",
+				"url": "https://www.lesfilmsdepleináir.org"
+			},
+			"eventStatus": "https://schema.org/EventScheduled",
+			"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+			"isAccessibleForFree": true
+		}
+		</script>
 
 		<!--fonts-->
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 		<!--CSS-->
 		<link rel="stylesheet" href="css/bootstrap.css">
-		<!--<link rel="stylesheet" href="css/style.css">-->
 		<link rel="stylesheet" href="css/stylescss.css">
-		<link rel="stylesheet"  href="webfonts/all.css">
+		<link rel="stylesheet" href="webfonts/all.css">
+
+		<style>
+			:root {
+				--gold: #C9A84C;
+				--dark: #0f0f0f;
+				--cream: #F5F0E8;
+				--mid: #2a2a2a;
+				--accent: #e8d5a3;
+			}
+			body { background: var(--dark); color: var(--cream); font-family: 'Lato', sans-serif; }
+			h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+			/* ---- NAVBAR ---- */
+			.maNav { background: rgba(15,15,15,0.97); border-bottom: 1px solid rgba(201,168,76,0.3); }
+			.maNav .navbar-brand img { filter: brightness(1.1); }
+			.nav-link { font-family: 'Lato', sans-serif; letter-spacing: .12em; font-size: .82rem; text-transform: uppercase; color: var(--cream) !important; transition: color .25s; }
+			.nav-link:hover, .nav-link.active { color: var(--gold) !important; }
+
+			/* ---- COOKIE ALERT ---- */
+			.alert-secondary { background: #1a1a1a; border: 1px solid var(--gold); color: var(--cream); font-size: .85rem; border-radius: 0; }
+			.btn-success { background: var(--gold); border-color: var(--gold); color: var(--dark); font-weight: 700; }
+			.btn-danger { background: transparent; border-color: #888; color: #aaa; }
+
+			/* ---- BTN CUSTOM ---- */
+			.btn-custom { background: transparent; border: 1px solid var(--gold); color: var(--gold); font-family: 'Lato', sans-serif; letter-spacing: .15em; font-size: .78rem; text-transform: uppercase; padding: .55rem 1.5rem; transition: all .3s; border-radius: 0; }
+			.btn-custom:hover { background: var(--gold); color: var(--dark); }
+
+			/* ---- HERO / WELCOME ---- */
+			.welcome {
+				min-height: 92vh;
+				background: linear-gradient(135deg, rgba(15,15,15,0.92) 0%, rgba(15,15,15,0.65) 100%),
+					url('images/01-welcomeAside.jpg') center/cover no-repeat;
+				display: flex; align-items: center;
+				position: relative;
+				overflow: hidden;
+			}
+			.welcome::before {
+				content: '';
+				position: absolute; inset: 0;
+				background: radial-gradient(ellipse at 60% 40%, rgba(201,168,76,0.08) 0%, transparent 60%);
+			}
+			.welcome article { position: relative; z-index: 1; }
+			.welcome article > p:first-child {
+				font-family: 'Playfair Display', serif; font-style: italic; font-size: 1rem;
+				color: var(--gold); letter-spacing: .2em; text-transform: uppercase; margin-bottom: .5rem;
+			}
+			.welcome article .date {
+				display: flex; flex-direction: column; gap: .1rem; margin-bottom: 1.5rem;
+			}
+			.welcome article .date span:first-child {
+				font-family: 'Lato', sans-serif; font-size: .85rem; font-weight: 300;
+				color: var(--accent); letter-spacing: .3em; text-transform: uppercase;
+			}
+			.welcome article .date .textshadow {
+				font-family: 'Playfair Display', serif; font-size: 4.5rem; font-weight: 700; line-height: 1;
+				color: var(--cream); text-shadow: 0 0 60px rgba(201,168,76,0.3);
+			}
+			.welcome article .date span:last-child {
+				font-family: 'Lato', sans-serif; font-size: .75rem; font-weight: 300;
+				color: #888; letter-spacing: .4em; text-transform: uppercase;
+			}
+			.welcome article > p:nth-of-type(2) {
+				font-family: 'Playfair Display', serif; font-size: 1.6rem; font-style: italic;
+				color: var(--cream); margin-bottom: 2rem; line-height: 1.4;
+			}
+			.welcome .film-theme-badge {
+				display: inline-block; border: 1px solid rgba(201,168,76,0.4);
+				padding: .3rem 1rem; font-size: .7rem; letter-spacing: .3em;
+				text-transform: uppercase; color: var(--gold); margin-bottom: 1rem;
+			}
+
+			/* ---- ABOUT ---- */
+			.about {
+				background: var(--cream); color: var(--dark);
+				padding: 5rem 0;
+			}
+			.about h2 { color: var(--dark); font-size: 2.2rem; margin-bottom: 1.2rem; }
+			.about h2::after { content: ''; display: block; width: 3rem; height: 2px; background: var(--gold); margin-top: .7rem; }
+			.about p { font-size: 1.05rem; line-height: 1.85; color: #333; }
+			.about .btn-custom { border-color: var(--dark); color: var(--dark); }
+			.about .btn-custom:hover { background: var(--dark); color: var(--cream); }
+
+			/* ---- NEWS ---- */
+			.news {
+				background: var(--mid); padding: 5rem 0;
+			}
+			.news h2 { color: var(--cream); font-size: 2.2rem; margin-bottom: 1.2rem; }
+			.news h2::after { content: ''; display: block; width: 3rem; height: 2px; background: var(--gold); margin-top: .7rem; }
+			.news p { color: #ccc; line-height: 1.8; }
+			.news a:not(.btn) { color: var(--gold); }
+
+			/* ---- FILMS ---- */
+			.movie { background: var(--dark); padding: 5rem 0; }
+			.movie h2 { color: var(--cream); font-size: 2.2rem; margin-bottom: 2rem; text-align: center; }
+			.movie h2::after { content: ''; display: block; width: 3rem; height: 2px; background: var(--gold); margin: .7rem auto 0; }
+			.movie img { transition: transform .4s, opacity .4s; opacity: .85; }
+			.movie a:hover img { transform: scale(1.04); opacity: 1; }
+			.movie .col-sm-4 { margin-bottom: 1rem; }
+
+			/* ---- BOOKING ---- */
+			.booking { background: var(--cream); color: var(--dark); padding: 5rem 0; }
+			.booking h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
+			.booking h2::after { content: ''; display: block; width: 3rem; height: 2px; background: var(--gold); margin-top: .7rem; }
+			.booking label { font-weight: 700; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+			.booking .form-control { border-radius: 0; border-color: #ccc; background: #fff; }
+			.booking .form-control:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(201,168,76,0.2); }
+			.booking .btn-custom { border-color: var(--dark); color: var(--dark); }
+			.booking .btn-custom:hover { background: var(--dark); color: var(--cream); }
+
+			/* ---- CONTACT ---- */
+			.contact { background: var(--dark); padding: 5rem 0; }
+			.contact h2 { color: var(--cream); font-size: 2.2rem; margin-bottom: 1.5rem; }
+			.contact h2::after { content: ''; display: block; width: 3rem; height: 2px; background: var(--gold); margin-top: .7rem; }
+			.contact label { color: var(--accent); font-weight: 700; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; }
+			.contact .form-control { border-radius: 0; border-color: #333; background: #1a1a1a; color: var(--cream); }
+			.contact .form-control:focus { border-color: var(--gold); box-shadow: 0 0 0 2px rgba(201,168,76,0.2); background: #1a1a1a; color: var(--cream); }
+			.contact .form-control::placeholder { color: #555; }
+
+			/* ---- FOOTER ---- */
+			.footer { background: #050505; color: #999; padding: 3rem 0 0; }
+			.footer h2 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1.2rem; }
+			.footerLinks a, .footer a { display: block; color: #888; font-size: .88rem; margin-bottom: .4rem; text-decoration: none; transition: color .25s; }
+			.footerLinks a:hover, .footer a:hover { color: var(--gold); }
+			.footer .contactIcons p { font-size: .88rem; margin-bottom: .5rem; color: #888; }
+			.footer .contactIcons i { color: var(--gold); }
+			.footer .partenaire li { font-size: .88rem; color: #888; margin-bottom: .3rem; }
+			.footer .partenaire ul { padding-left: 1rem; }
+			.socialicons a { display: inline-block; width: 36px; height: 36px; border: 1px solid #333; color: #888; text-align: center; line-height: 36px; margin-right: .4rem; transition: all .3s; font-size: .9rem; }
+			.socialicons a:hover { border-color: var(--gold); color: var(--gold); }
+			.socketBkg { background: #000; margin-top: 2rem; }
+			.socket { padding: 1.2rem 0; font-size: .8rem; color: #444; }
+			.socket a { color: var(--gold); }
+
+			/* ---- SCROLL BTN ---- */
+			#myBtn { position: fixed; bottom: 2rem; right: 2rem; background: var(--gold); color: var(--dark); border: none; width: 42px; height: 42px; display: none; cursor: pointer; z-index: 999; font-size: .85rem; }
+		</style>
+
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-39RLFYST27"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-39RLFYST27');
+		</script>
 		<!-- Google Tag Manager -->
-			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-K9DSXDLT');</script>
-			<!-- End Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K9DSXDLT');</script>
 	</head>
+
 	<body data-spy="scroll" data-target="#booking">
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9DSXDLT"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<!--00.header-->
-		<nav class="navbar sticky-top navbar-expand-lg navbar-dark maNav">
-			<a class="navbar-brand" href="#">
-				<img src="images/logo.jpg" width="100"/>
+
+		<!--00. HEADER / NAVIGATION-->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark maNav" role="navigation" aria-label="Navigation principale">
+			<a class="navbar-brand" href="index.html" title="Festival des Films de Plein Air – Accueil">
+				<img src="images/logo.jpg" width="100" alt="Logo Festival des Films de Plein Air au Parc Monceau Paris"/>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto">
-				<a class="nav-item nav-link active" href="#">accueil <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="films.html">Les Films</a>
-				<a class="nav-item nav-link navLink" href="#booking">Réservation</a>
-				<a href="blog.html" class="nav-item nav-link navLink">Actualités</a>
-				<a class="nav-item nav-link" href="contact.html">Contact</a>
+					<a class="nav-item nav-link active" href="index.html">Accueil <span class="sr-only">(page courante)</span></a>
+					<a class="nav-item nav-link" href="films.html">Les Films</a>
+					<a class="nav-item nav-link navLink" href="#booking">Réservation</a>
+					<a href="blog.html" class="nav-item nav-link navLink">Actualités</a>
+					<a class="nav-item nav-link" href="contact.html">Contact</a>
 				</div>
 			</div>
 		</nav>
 		<!--end header-->
 
-		<!--Modal cookie-->
-		
-			<div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
+		<!--Modal cookie RGPD-->
+		<div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
 			<p>
-				En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de Cookies. Ces cookies ne sont utilisés qu'à des fins statistiques.
+				En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies à des fins statistiques (Google Analytics), conformément à notre 
+				<a href="mentions-legales.html" style="color:var(--gold);">politique de confidentialité</a>.
 			</p>
-			<button type="button" class="btn btn-success btn-sm" data-dismiss="alert" aria-label="Close">
+			<button type="button" class="btn btn-success btn-sm" data-dismiss="alert" aria-label="Accepter les cookies">
 				J'accepte
 			</button>
-			<button type="button" class="btn btn-danger btn-sm" data-dismiss="alert" aria-label="Close">
-					Je refuse
+			<button type="button" class="btn btn-danger btn-sm" data-dismiss="alert" aria-label="Refuser les cookies">
+				Je refuse
 			</button>
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
-		<!--Modal cookie-->
-		<!--01.accueil-->
-		<section class="container-fluid welcome">
+
+		<!--01. HERO – ACCUEIL-->
+		<section class="container-fluid welcome" aria-labelledby="hero-titre">
 			<div class="container">
-				<div class="row">
-					<aside class="col-lg-6">
-						
-						<!--<img src="images/01-welcomeAside.jpg" class="img-fluid" alt="Films en plein air">-->
+				<div class="row align-items-center">
+					<aside class="col-lg-6" aria-hidden="true">
+						<!-- Image de fond gérée en CSS background -->
 					</aside>
 					<article class="col-lg-6">
-						<p>-Festival-</p>
+						<p aria-hidden="true">— Festival —</p>
+						<div class="film-theme-badge" aria-hidden="true">Thème 2025</div>
 						<div class="date">
-							<span>-Mois-</span>
-							<span class="textshadow">-Année-</span>
-							<span>-Edition-</span>
+							<span>5 – 7 Août</span>
+							<span class="textshadow" id="hero-titre">Le Voyage</span>
+							<span>9<sup>ème</sup> Édition</span>
 						</div>
-						<p>-Slogan-</p>
-						<a href="films.html" class="btn btn-custom">-Programme-</a>
+						<p>Trois soirées de cinéma d'auteur en plein air, <br>au cœur du Parc Monceau, Paris 8<sup>e</sup>.</p>
+						<a href="films.html" class="btn btn-custom" title="Voir le programme complet des films 2025">Voir le programme</a>
 					</article>
 				</div>
 			</div>
 		</section>
 		<!--end accueil-->
 
-		<!--02.à propos-->
-		<section class="container-fluid about">
+		<!--02. À PROPOS-->
+		<section class="container-fluid about" aria-labelledby="about-titre">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<article class="col-lg-6">
-						<h2 id="about">-Titre-</h2>
-						<p>In principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit
-                        </p>
-						<a href="#booking" class="btn btn-custom"> Je réserve !</a>
+						<h2 id="about-titre" id="about">Le Festival des Films de Plein Air</h2>
+						<p>
+							Chaque été depuis 2017, l'association <strong>Les Films de Plein Air</strong> transforme le Parc Monceau en une salle de cinéma à ciel ouvert. 
+							Nichée au cœur du 8<sup>e</sup> arrondissement de Paris, cette oasis verdoyante devient le temps d'un week-end le temple du <strong>cinéma d'auteur</strong>.
+						</p>
+						<p>
+							Pour cette 9<sup>ème</sup> édition, Jennifer Vialet et son équipe ont choisi d'explorer le thème universel du <strong>Voyage</strong> : voyages intérieurs, grands départs, exils choisis ou subis, road trips initiatiques… 
+							Dix films soigneusement sélectionnés vous invitent à traverser des continents, des époques et des émotions, chaque soir du <strong>5 au 7 août 2025</strong>, de 18h à minuit, sous les étoiles parisiennes.
+						</p>
+						<p>
+							L'entrée est <strong>gratuite</strong>, sur réservation. Apportez votre plaid, installez-vous sur l'herbe et laissez-vous embarquer.
+						</p>
+						<a href="#booking" class="btn btn-custom" title="Réserver votre place pour le Festival des Films de Plein Air">Je réserve ma place</a>
 					</article>
 					<aside class="col-lg-6 order-first order-lg-2">
-						<!--<img src="images/02-parcMonceauAside.jpg" class="img-fluid" alt="Parc Monceau">-->
+						<img src="images/02-parcMonceauAside.jpg" class="img-fluid" alt="Le Parc Monceau la nuit, cadre du Festival des Films de Plein Air à Paris">
 					</aside>
 				</div>
 			</div>
 		</section>
 		<!--end à propos-->
 
-		<!--03.actualité-->
-		<section class="container-fluid news">
+		<!--03. ACTUALITÉ-->
+		<section class="container-fluid news" aria-labelledby="news-titre">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<aside class="col-lg-6">
-						<!--<img src="images/03-actuAside.jpg" class="img-fluid" alt="Actualité">-->
+						<img src="images/03-actuAside.jpg" class="img-fluid" alt="Projection de cinéma en plein air au Parc Monceau Paris">
 					</aside>
 					<article class="col-lg-6">
-						<h2 id="news">-Titre-</h2>
-						<p>In principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit
-
-						<p>-Lien possible-<a href="#">ici</a>.</p>
-						<p>In principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit </p>
-						<a href="rendez-vous-le-05-aout.html" class="btn btn-custom">Lire la suite</a>
+						<h2 id="news-titre" id="news">Dernières actualités</h2>
+						<p>
+							<strong>La programmation 2025 est dévoilée !</strong> Après plusieurs mois de sélection rigoureuse, Jennifer Vialet et le comité artistique ont arrêté leur choix : 
+							dix films d'auteur d'horizons multiples, tous réunis autour du thème du <em>Voyage</em>.
+						</p>
+						<p>
+							Au programme de cette édition, des œuvres signées par des cinéastes de renom — de Wim Wenders à Agnès Varda — mais aussi des pépites moins connues du grand public, 
+							venues d'Asie, d'Afrique et d'Amérique latine. Retrouvez la liste complète et les synopsis sur notre 
+							<a href="films.html" title="Programme complet des films du festival 2025">page dédiée aux films</a>.
+						</p>
+						<p>
+							Les séances ont lieu <strong>chaque soir du 5 au 7 août 2025</strong>, à partir de 18h. La nuit tombant, le grand écran s'allume et la magie opère.
+						</p>
+						<a href="blog.html" class="btn btn-custom" title="Lire toutes les actualités du Festival des Films de Plein Air">Toutes les actualités</a>
 					</article>
 				</div>
 			</div>
 		</section>
 		<!--end actualité-->
 
-		<!--04.films-->
-		<section class="container-fluid movie">
+		<!--04. FILMS-->
+		<section class="container-fluid movie" aria-labelledby="movie-titre">
 			<div class="container">
-				
 				<div class="row">
-					<!--<div class="col-12 col-sm-4 col-md2 imgResponsive">
-						<a href="#"><img src="images/01lesFiguresDeLombre.png"></a>
-					</div>-->
-					<div class="col-12"><h2 id="movie">-Titre-</h2></div>
-					<div class="col-sm-4 col-md-3 col-lg-2 ">
-						<a href="films.html#01film" class="hoverImg" ><img src="images/01-films.jpg" class="img-fluid" alt="affiche film"></a>
-						
-					</div>
-					<div class="col-sm-4 col-md-3 col-lg-2 ">
-						<a href="films.html#02film"><img src="images/02-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-12">
+						<h2 id="movie-titre" id="movie">La Sélection 2025 — <em>Le Voyage</em></h2>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#03film"><img src="images/03-films.jpg" class="img-fluid" alt=""></a>
+						<a href="films.html#01film" title="Voir le film 01 de la sélection"><img src="images/01-films.jpg" class="img-fluid" alt="Affiche film 1 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class=" col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#04film"><img src="images/04-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#02film" title="Voir le film 02 de la sélection"><img src="images/02-films.jpg" class="img-fluid" alt="Affiche film 2 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#05film"><img src="images/05-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#03film" title="Voir le film 03 de la sélection"><img src="images/03-films.jpg" class="img-fluid" alt="Affiche film 3 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#06film"><img src="images/06-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#04film" title="Voir le film 04 de la sélection"><img src="images/04-films.jpg" class="img-fluid" alt="Affiche film 4 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#07film"><img src="images/07-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#05film" title="Voir le film 05 de la sélection"><img src="images/05-films.jpg" class="img-fluid" alt="Affiche film 5 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#08film"><img src="images/08-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#06film" title="Voir le film 06 de la sélection"><img src="images/06-films.jpg" class="img-fluid" alt="Affiche film 6 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#09film"><img src="images/09-films.jpg"class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#07film" title="Voir le film 07 de la sélection"><img src="images/07-films.jpg" class="img-fluid" alt="Affiche film 7 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#10film"><img src="images/10-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#08film" title="Voir le film 08 de la sélection"><img src="images/08-films.jpg" class="img-fluid" alt="Affiche film 8 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#11film"><img src="images/11-films.jpg"class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#09film" title="Voir le film 09 de la sélection"><img src="images/09-films.jpg" class="img-fluid" alt="Affiche film 9 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#12film"><img src="images/12-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#10film" title="Voir le film 10 de la sélection"><img src="images/10-films.jpg" class="img-fluid" alt="Affiche film 10 – sélection Festival des Films de Plein Air 2025"></a>
+					</div>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#11film" title="Voir le film 11 de la sélection"><img src="images/11-films.jpg" class="img-fluid" alt="Affiche film 11 – sélection Festival des Films de Plein Air 2025"></a>
+					</div>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#12film" title="Voir le film 12 de la sélection"><img src="images/12-films.jpg" class="img-fluid" alt="Affiche film 12 – sélection Festival des Films de Plein Air 2025"></a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!--end films-->
 
-		<!--05.réservation-->
-		<section class="container-fluid booking">
+		<!--05. RÉSERVATION-->
+		<section class="container-fluid booking" aria-labelledby="booking-titre">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<aside class="col-lg-6">
-						<!--<img src="images/05-resaAside.jpg"class="img-fluid" alt="cinema clap">-->
+						<img src="images/05-resaAside.jpg" class="img-fluid" alt="Clap de cinéma – réservation Festival des Films de Plein Air Parc Monceau Paris">
 					</aside>
 					<article class="col-lg-6">
-						<h2 id="booking">Réservation en ligne</h2>
-						<form class="needs-validation" novalidate id="bookingValidation">				
+						<h2 id="booking-titre" id="booking">Réservation en ligne</h2>
+						<p style="color:#555; margin-bottom:1.5rem; font-size:.93rem;">
+							L'accès aux séances est <strong>gratuit</strong>. La réservation est néanmoins obligatoire afin de garantir la qualité d'accueil de chaque spectateur. 
+							Places limitées à <strong>300 personnes par séance</strong>.
+						</p>
+						<form class="needs-validation" novalidate id="bookingValidation" action="#" method="post">
 							<div class="form-group">
-								<label for="nom">Prénom Nom</label>
-								<input class="form-control" required type="text" name="nom" id="nom" placeholder="Jean Dupond" />
-								<div class="invalid-tooltip">
-									Merci de renseigner vos prénom et nom.
-								</div>
+								<label for="nom">Prénom &amp; Nom</label>
+								<input class="form-control" required type="text" name="nom" id="nom" placeholder="ex. : Marie Dupont" autocomplete="name"/>
+								<div class="invalid-tooltip">Merci de renseigner vos prénom et nom.</div>
 							</div>
 							<div class="form-group">
-								<label for="mail">E-mail</label>
-								<input class="form-control" required type="email" name="mail" id="mail" placeholder="jeandupond@monmail.fr" />
-								<div class="invalid-tooltip">
-									Merci de renseigner votre e-mail.
-								</div>
+								<label for="mail">Adresse e-mail</label>
+								<input class="form-control" required type="email" name="mail" id="mail" placeholder="ex. : marie.dupont@mail.fr" autocomplete="email"/>
+								<div class="invalid-tooltip">Merci de renseigner une adresse e-mail valide.</div>
 							</div>
 							<div class="form-group">
 								<label for="phone">Téléphone</label>
-								<input class="form-control" required type="tel" name="phone" id="phone" placeholder="0611223344" />
-								<div class="invalid-tooltip">
-									Merci de renseigner votre numéro de téléphone.
-								</div>
+								<input class="form-control" required type="tel" name="phone" id="phone" placeholder="ex. : 06 12 34 56 78" autocomplete="tel"/>
+								<div class="invalid-tooltip">Merci de renseigner votre numéro de téléphone.</div>
 							</div>
 							<div class="form-group">
-								<label for="place">Nb. places</label>
-								<input class="form-control" type="number" name="place" id="place" min="1" value="1">
+								<label for="place">Nombre de places</label>
+								<input class="form-control" type="number" name="place" id="place" min="1" max="10" value="1">
 							</div>
 							<div class="form-group">
-								<label for="seance">Séances</label>
+								<label for="seance">Choisissez votre séance</label>
 								<select class="form-control" required name="seance" id="seance">
-										<option value="" selected disabled>Ma Séance</option>
-									<optgroup label="Date 1">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
+									<option value="" selected disabled>Sélectionnez une séance</option>
+									<optgroup label="Mardi 5 août 2025">
+										<option value="05-08-18h">18h00 – Les Ailes du Désir (Wim Wenders)</option>
+										<option value="05-08-20h30">20h30 – Into the Wild (Sean Penn)</option>
+										<option value="05-08-23h">23h00 – Lost in Translation (Sofia Coppola)</option>
 									</optgroup>
-									<optgroup label="Date 2">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
+									<optgroup label="Mercredi 6 août 2025">
+										<option value="06-08-18h">18h00 – Overseas (Sung-a Yoon)</option>
+										<option value="06-08-20h30">20h30 – Carnets de Voyage (Walter Salles)</option>
+										<option value="06-08-23h">23h00 – Sans toit ni loi (Agnès Varda)</option>
 									</optgroup>
-									<optgroup label="Date 3">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
-									</optgroup>
-									<optgroup label="Date 4">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
+									<optgroup label="Jeudi 7 août 2025">
+										<option value="07-08-18h">18h00 – Yi Yi (Edward Yang)</option>
+										<option value="07-08-20h30">20h30 – Timbuktu (Abderrahmane Sissako)</option>
+										<option value="07-08-23h">23h00 – Le Voyage de Chihiro (Hayao Miyazaki)</option>
 									</optgroup>
 								</select>
-								<div class="invalid-tooltip">
-									Merci de choisir votre séance.
-								</div>
+								<div class="invalid-tooltip">Merci de choisir votre séance.</div>
 							</div>
-							<button type="submit" class="btn btn-custom">Je réserve !</button>
+							<button type="submit" class="btn btn-custom">Je réserve ma place</button>
 						</form>
 					</article>
 				</div>
@@ -259,45 +448,45 @@
 		</section>
 		<!-- end réservation-->
 
-		<!--06.contact-->
-		<section class="container-fluid contact">
+		<!--06. CONTACT-->
+		<section class="container-fluid contact" aria-labelledby="contact-titre">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<aside class="col-lg-6">
-						<iframe src="images/Carte.jpg" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe 
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4!2d2.3077!3d48.8793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f97b09ed0b1%3A0x5f1a1e3b5a3b3b3b!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1"
+							width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen 
+							title="Carte d'accès au Parc Monceau, Paris 8e – Festival des Films de Plein Air"
+							loading="lazy">
+						</iframe>
 					</aside>
 					<article class="col-lg-6">
-						<h2 id="contact">Contactez-nous !</h2>
-						<form class="needs-validation" novalidate id="contactValidation">
+						<h2 id="contact-titre" id="contact">Contactez-nous</h2>
+						<p style="color:#aaa; margin-bottom:1.5rem; font-size:.93rem;">
+							Une question sur le programme, l'accès, un partenariat ? Notre équipe vous répond dans les meilleurs délais.
+						</p>
+						<form class="needs-validation" novalidate id="contactValidation" action="#" method="post">
 							<div class="form-group">
-								<label for="nom">Prénom Nom</label>
-								<input class="form-control" required type="text" name="nom" id="nom" placeholder="Jean Dupond" />
-								<div class="invalid-tooltip">
-									Merci de renseigner vos prénom et nom.
-								</div>
+								<label for="c-nom">Prénom &amp; Nom</label>
+								<input class="form-control" required type="text" name="c-nom" id="c-nom" placeholder="ex. : Marie Dupont" autocomplete="name"/>
+								<div class="invalid-tooltip">Merci de renseigner vos prénom et nom.</div>
 							</div>
 							<div class="form-group">
-								<label for="mail">E-mail</label>
-								<input class="form-control" required type="email" name="mail" id="mail" placeholder="jeandupond@monmail.fr" />
-								<div class="invalid-tooltip">
-									Merci de renseigner votre e-mail.
-								</div>
+								<label for="c-mail">Adresse e-mail</label>
+								<input class="form-control" required type="email" name="c-mail" id="c-mail" placeholder="ex. : marie.dupont@mail.fr" autocomplete="email"/>
+								<div class="invalid-tooltip">Merci de renseigner une adresse e-mail valide.</div>
 							</div>
 							<div class="form-group">
 								<label for="sujet">Sujet</label>
-								<input class="form-control" required type="text" name="sujet" id="sujet" placeholder="Sujet" />
-								<div class="invalid-tooltip">
-									Merci de renseigner le sujet.
-								</div>
+								<input class="form-control" required type="text" name="sujet" id="sujet" placeholder="ex. : Demande de partenariat"/>
+								<div class="invalid-tooltip">Merci de renseigner le sujet de votre message.</div>
 							</div>
 							<div class="form-group">
 								<label for="message">Votre message</label>
-								<textarea class="form-control" required name="message" id="message" rows="5" cols="50" placeholder="Composez votre texte !"></textarea>
-								<div class="invalid-tooltip">
-									Merci de rédiger votre message.
-								</div>
+								<textarea class="form-control" required name="message" id="message" rows="5" placeholder="Décrivez votre demande..."></textarea>
+								<div class="invalid-tooltip">Merci de rédiger votre message.</div>
 							</div>
-							<button type="submit" class="btn btn-custom">Envoyer</button>
+							<button type="submit" class="btn btn-custom">Envoyer le message</button>
 						</form>
 					</article>
 				</div>
@@ -305,66 +494,66 @@
 		</section>
 		<!--end contact-->
 
-		<!--07.footer-->
-		<footer class="container-fluid footer">
+		<!--07. FOOTER-->
+		<footer class="container-fluid footer" role="contentinfo">
             <div class="container py-3">
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <h2>Liens utiles</h2>
-                        <div class="footerLinks">
+                        <nav class="footerLinks" aria-label="Navigation secondaire">
                             <a href="index.html">Accueil</a>
-                            <a href="films.html">Les Films</a>
+                            <a href="films.html">Les Films 2025</a>
                             <a href="blog.html">Actualités</a>
                             <a href="contact.html">Contact</a>
                             <a href="mentions-legales.html">Mentions légales</a>
-                        </div>
+                        </nav>
                     </div>
                     <div class="col-12 col-md-3 address">
-                        <h2>Contactez-nous</h2>
-                        <div class="contactIcons mb-3">
-                            <p><span class="pr-3"><i class="fas fa-home"></i></span>-Adresse-</p>
-                            <p><span class="pr-3"><i class="fas fa-envelope"></i></span>-Mail-</p>
-                            <p><span class="pr-3"><i class="fas fa-phone"></i></span>-Tél.-</p>
-                        </div>
+                        <h2>Nous trouver</h2>
+                        <address class="contactIcons mb-3">
+                            <p><span class="pr-3"><i class="fas fa-home" aria-hidden="true"></i></span>35 bd de Courcelles, 75008 Paris</p>
+                            <p><span class="pr-3"><i class="fas fa-envelope" aria-hidden="true"></i></span><a href="mailto:contact@lesfilmsdepleináir.org">contact@lesfilmsdepleináir.org</a></p>
+                            <p><span class="pr-3"><i class="fas fa-phone" aria-hidden="true"></i></span><a href="tel:+33123456789">01 23 45 67 89</a></p>
+                        </address>
                     </div>
                     <div class="col-12 col-md-3 partenaire">
-                        <h2>Partenariat</h2>
+                        <h2>Nos partenaires</h2>
                         <div class="contactIcons mb-3">
                             <ul>
-                                <li>-Partenaire 1-</li>
-                                <li>-Partenaire 2-</li>
-                                <li>-Partenaire 3-</li>
+                                <li><a href="https://www.paris.fr" target="_blank" rel="noopener" title="Mairie de Paris – partenaire officiel">Mairie de Paris</a></li>
+                                <li><a href="https://www.iledefrance.fr" target="_blank" rel="noopener" title="Région Île-de-France – partenaire officiel">Région Île-de-France</a></li>
+                                <li><a href="https://www.francetelevisions.fr" target="_blank" rel="noopener" title="France Télévisions – partenaire média">France Télévisions</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-12 col-md-3 social">
-                        <h2>Suivez-nous !</h2>
+                        <h2>Suivez-nous</h2>
                         <div class="socialicons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/lesfilmsdepleinair" target="_blank" rel="noopener" title="Page Facebook du Festival des Films de Plein Air" aria-label="Suivez-nous sur Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://www.youtube.com/@lesfilmsdepleinair" target="_blank" rel="noopener" title="Chaîne YouTube du Festival des Films de Plein Air" aria-label="Suivez-nous sur YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/lesfilmsdepleinair" target="_blank" rel="noopener" title="Compte Instagram du Festival des Films de Plein Air" aria-label="Suivez-nous sur Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>	
+                </div>
             </div>
-            <div class="socketBkg ">
+            <div class="socketBkg">
                 <div class="socket text-center">
-                    <p>Copyright - Site réalisé par <br>
-                        Université Côte d'Azur - <a href="https://univ-cotedazur.fr/" target="_blank">Univ-Côte d'Azur</a></p>
+                    <p>© 2025 Association Les Films de Plein Air – Tous droits réservés<br>
+                    Site réalisé avec le soutien de l'<a href="https://univ-cotedazur.fr/" target="_blank" rel="noopener">Université Côte d'Azur</a></p>
                 </div>
             </div>
 		</footer>
 		<!--end footer-->
 
 		<!--Scroll to top button-->
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-		<!--End Scroll to top button-->
+		<button onclick="topFunction()" id="myBtn" title="Retour en haut de page" aria-label="Retour en haut de page">
+			<i class="fas fa-chevron-up" aria-hidden="true"></i>
+		</button>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<!-- jQuery, Popper, Bootstrap JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>	
+		<script src="js/main.js"></script>
 	</body>
 </html>
